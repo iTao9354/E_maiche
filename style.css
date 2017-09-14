@@ -1,5 +1,14 @@
 .floatleft { float: left }
 .floatright { float: right }
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
 .alignleft {
     float: left;
     margin-right: 15px;
@@ -574,8 +583,8 @@ padding: 35px 0 180px;}
     padding: 5px 0;
 }
 .footer-menu a {
-    display: block;
-    padding: 5px 0;color: #999
+    padding: 5px 0;
+    color: #999
 }
 .company-info {
   height: 216px;

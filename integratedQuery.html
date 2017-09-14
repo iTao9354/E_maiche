@@ -137,8 +137,10 @@
 <div class="promo-area query-promo-area">
 	<div class="container">
 		<div class="row row-choose">
-			<div class="col-md-12 col-sm-12 hasChoosed">
-			您已选择：
+			<div class="col-md-12 col-sm-12 hasChoosed clearfix">
+				<span class="floatleft">您已选择：</span>
+				<p class="floatleft"></p>
+				<i class="iconfont">&#xe66b;</i>
 			</div>
 			<div class="col-md-12 col-sm-12">
 				<ul class="query-conditions">
@@ -211,21 +213,21 @@
 
 <div class="product-widget-area">
 	<div class="zigzag-bottom"></div>
-	<table id="productTable">  
-		<thead>
-			<tr>
-				<th>时间</th>
-				<th>价格</th>
-				<th>里程</th>
-				<th>车龄</th>
-				<th>用户状态</th>
-				<th>锁定次数</th>
-				<th>注册时间</th>
-				<th>操作</th>
-				<th>操作</th>
-			</tr>
-		</thead>
-	</table>
+	<div class="container">
+		<table id="productTable" class="product-table">  
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>					
+					<th></th>
+					<th>时间</th>
+					<th>价格</th>
+					<th>里程</th>
+					<th>车龄</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 </div> <!-- End product widget area -->
 
 
@@ -313,15 +315,14 @@
 <script>
 	$.extend( $.fn.dataTable.defaults, {
 		"searching": false,
-	    "ordering":  false,
 	    "info": false,
 	    "lengthChange": false,
     	"bAutoWidth": true,
     	"bPaginate": true, //翻页功能
 		"bLengthChange": false, //改变每页显示数据数量
 		"bFilter": false, //过滤功能
-		"pageLength": 10,
-		"bSort": false, //排序功能
+		"pageLength": 5,
+		// "ordering": true, //排序功能
 		"bInfo": false,//页脚信息
 		"serverSide": true,
 		"pagingType":   "full_numbers",
