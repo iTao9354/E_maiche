@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-09-11 23:08:50
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-14 20:06:26
+* @Last Modified time: 2017-09-15 23:18:24
 */
 
 $(function() {
@@ -13,16 +13,26 @@ $(function() {
 })
 
 // 选择查询条件
-function chooseConditions() {
-	$('.condition-list').each(function() {
-		$(this).children('a').click(function() {
-			var _this = $(this),
-				selectedHtml = _this.html();
-			_this.addClass('selected').siblings().removeClass('selected');
-			$('.hasChoosed > p').append('<span>'+selectedHtml+'<i class="iconfont">&#xe622;</i></span>');
-			$('.hasChoosed > .iconfont').show();
-		})
-	})	
+var conditionObj = {};
+function chooseConditions() {	
+	$('.condition-list > a').click(function() {
+		var _this = $(this),
+			selectedHtml = _this.html(),
+			selectedName = _this.attr('name');
+		_this.addClass('selected').siblings().removeClass('selected');
+		$('.hasChoosed > .iconfont').show();
+		conditionObj[selectedName] = selectedHtml;
+		$('.hasChoosed > p').empty()
+		for(var name in conditionObj) {
+			$('.hasChoosed > p').append('<span>'+conditionObj[name]+'<i class="iconfont" onclick="remCondition(this,\''+name+'\');">&#xe622;</i></span>');
+		}		
+		console.log(conditionObj)
+	})
+		
+}
+function remCondition(ele, name) {
+	$(ele).parent().remove();
+	delete conditionObj[name];
 }
 
 // 初始化表格
@@ -112,19 +122,19 @@ function initProductTable(){
 		            { "data": "registeredDate" }
 		 ],
 //		 "json":{
-//			 "total":14,
+//			 "total":10,
 			 "data": productTableData,
 //		 },
-//		 ajax: {
-//		     url:webpath+'/user/selectPage',
-//		     "type": 'POST',
-//		     "dataSrc": function (json) {
-//		    	 console.log(JSON.stringify(json));
-//		           json.iTotalRecords = json.total;
-//		           json.iTotalDisplayRecords = json.total;
-//		           return json.data;
-//		     }
-//		},
+		// ajax: {
+		//     url:webpath+'resInfo/list',
+		//     type: 'POST',
+		//     data: JSON.Stringify(conditionObj),
+		//     dataSrc: function (json) {
+		//         json.iTotalRecords = json.total;
+		//         json.iTotalDisplayRecords = json.total;
+		//         return json.data;
+		//     }
+		// },
 		columnDefs:[
 			{
 				"targets" : 0,//操作按钮目标列
@@ -141,7 +151,6 @@ function initProductTable(){
 				"className": "car-info",
 				"orderable": false,
 				"render" : function(data, type,row) {
-					console.log(row)
 					  var html = '';
 					  html += '<a href="javascript:;">'+row.productTitle+'</a>';
 					  html += '<p>';

@@ -92,13 +92,18 @@
 <div class="site-branding-area">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-3">
 				<div class="logo">
-					<h1><a href="index.html">此处是logo(易迈车)</a></h1>
+					<h1>易迈车</h1>
 				</div>
 			</div>
-			
 			<div class="col-sm-6">
+				<div class="search-wrap">
+					<input type="text">
+					<button>搜 索</button>
+				</div>				
+			</div>
+			<div class="col-sm-3">
 				<div class="shopping-item">
 					<a href="cart.html">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
 				</div>
@@ -112,13 +117,15 @@
 		<div class="row">			 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">首页</a></li>
-					<li><a href="shop.html">买车</a></li>
-					<li><a href="single-product.html">卖车</a></li>
-					<li><a href="cart.html">求购</a></li>
-					<li><a href="checkout.html">评估</a></li>
-					<li><a href="#">商家</a></li>
-					<li><a href="#">联系</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li class="active">
+						<a href="integratedQuery.html">买车</a>
+					</li>
+					<li><a href="javascript:;">卖车</a></li>
+					<li><a href="javascript:;">求购</a></li>
+					<li><a href="javascript:;">评估</a></li>
+					<li><a href="javascript:;">商家</a></li>
+					<li><a href="javascript:;">联系</a></li>
 				</ul>
 			</div>  
 		</div>
@@ -129,7 +136,7 @@
 	<div class="container">
 		<div class="row row-position">
 			您当前的位置：
-			<a href="javascript:;">首页</a>><a href="javascript:;">买车</a>
+			<a href="index.html">首页</a> > <a href="integratedQuery.html">买车</a>
 		</div>
 	</div>        
 </div> <!-- End slider area -->
@@ -140,68 +147,78 @@
 			<div class="col-md-12 col-sm-12 hasChoosed clearfix">
 				<span class="floatleft">您已选择：</span>
 				<p class="floatleft"></p>
-				<i class="iconfont">&#xe66b;</i>
+				<i class="iconfont" title="一键清空">&#xe66b;</i>
 			</div>
 			<div class="col-md-12 col-sm-12">
 				<ul class="query-conditions">
 					<li class="clearfix">
 						<span class="floatleft">品 牌：</span>
 						<div class="floatleft condition-list">
-							<a href="javascript:;">全部</a>
-							<a href="javascript:;">奥迪</a>
-							<a href="javascript:;">本田</a>
-							<a href="javascript:;">别克</a>
-							<a href="javascript:;">宝马</a>
-							<a href="javascript:;">北汽制造</a>
-							<a href="javascript:;">福特</a>
-							<a href="javascript:;">马自达</a>
-							<a href="javascript:;">MG</a>
-							<a href="javascript:;">欧朗</a>
+							<a href="javascript:;" name="brand">全部</a>
+							<a href="javascript:;" name="brand">奥迪</a>
+							<a href="javascript:;" name="brand">本田</a>
+							<a href="javascript:;" name="brand">别克</a>
+							<a href="javascript:;" name="brand">宝马</a>
+							<a href="javascript:;" name="brand">北汽制造</a>
+							<a href="javascript:;" name="brand">福特</a>
+							<a href="javascript:;" name="brand">马自达</a>
+							<a href="javascript:;" name="brand">MG</a>
+							<a href="javascript:;" name="brand">欧朗</a>
 						</div>
 					</li>
 					<li class="clearfix">
-						<span class="floatleft">品 牌：</span>
+						<span class="floatleft">车 型：</span>
 						<div class="floatleft condition-list">
-							<a href="javascript:;">全部</a>
-							<a href="javascript:;">奥迪</a>
-							<a href="javascript:;">本田</a>
-							<a href="javascript:;">别克</a>
-							<a href="javascript:;">宝马</a>
-							<a href="javascript:;">北汽制造</a>
-							<a href="javascript:;">福特</a>
-							<a href="javascript:;">马自达</a>
-							<a href="javascript:;">MG</a>
-							<a href="javascript:;">欧朗</a>
+							<a href="javascript:;" name="carType">全部</a>
+							<a href="javascript:;" name="carType">跑车</a>
+							<a href="javascript:;" name="carType">轿车</a>
+							<a href="javascript:;" name="carType">越野车/SUV</a>
+							<a href="javascript:;" name="carType">MPV</a>
+							<a href="javascript:;" name="carType">面包车</a>
+							<a href="javascript:;" name="carType">皮卡</a>
+							<a href="javascript:;" name="carType">货车</a>
+							<a href="javascript:;" name="carType">商务车/MPV</a>
+							<a href="javascript:;" name="carType">客车</a>
 						</div>
 					</li>
 					<li class="clearfix">
-						<span class="floatleft">品 牌：</span>
+						<span class="floatleft">价 格：</span>
 						<div class="floatleft condition-list">
-							<a href="javascript:;">全部</a>
-							<a href="javascript:;">奥迪</a>
-							<a href="javascript:;">本田</a>
-							<a href="javascript:;">别克</a>
-							<a href="javascript:;">宝马</a>
-							<a href="javascript:;">北汽制造</a>
-							<a href="javascript:;">福特</a>
-							<a href="javascript:;">马自达</a>
-							<a href="javascript:;">MG</a>
-							<a href="javascript:;">欧朗</a>
+							<a href="javascript:;" name="price">全部</a>
+							<a href="javascript:;" name="price">3万以下</a>
+							<a href="javascript:;" name="price">3-5万</a>
+							<a href="javascript:;" name="price">5-8万</a>
+							<a href="javascript:;" name="price">8-12万</a>
+							<a href="javascript:;" name="price">12-18万</a>
+							<a href="javascript:;" name="price">18-24万</a>
+							<a href="javascript:;" name="price">24-35万</a>
+							<a href="javascript:;" name="price">35-50万</a>
+							<a href="javascript:;" name="price">50-100万</a>
+							<a href="javascript:;" name="price">100万以上</a>
 						</div>
 					</li>
 					<li class="clearfix">
-						<span class="floatleft">品 牌：</span>
+						<span class="floatleft">车 龄：</span>
 						<div class="floatleft condition-list">
-							<a href="javascript:;">全部</a>
-							<a href="javascript:;">奥迪</a>
-							<a href="javascript:;">本田</a>
-							<a href="javascript:;">别克</a>
-							<a href="javascript:;">宝马</a>
-							<a href="javascript:;">北汽制造</a>
-							<a href="javascript:;">福特</a>
-							<a href="javascript:;">马自达</a>
-							<a href="javascript:;">MG</a>
-							<a href="javascript:;">欧朗</a>
+							<a href="javascript:;" name="carAge">全部</a>
+							<a href="javascript:;" name="carAge">1年以内</a>
+							<a href="javascript:;" name="carAge">2年以内</a>
+							<a href="javascript:;" name="carAge">3年以内</a>
+							<a href="javascript:;" name="carAge">4年以内</a>
+							<a href="javascript:;" name="carAge">5年以内</a>
+							<a href="javascript:;" name="carAge">6年以内</a>
+							<a href="javascript:;" name="carAge">6年以上</a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<span class="floatleft">排 量：</span>
+						<div class="floatleft condition-list">
+							<a href="javascript:;" name="transmission">全部</a>
+							<a href="javascript:;" name="transmission">1.0L</a>
+							<a href="javascript:;" name="transmission">2.0L</a>
+							<a href="javascript:;" name="transmission">3.0L</a>
+							<a href="javascript:;" name="transmission">4.0L</a>
+							<a href="javascript:;" name="transmission">5.0L及以上</a>
 						</div>
 					</li>
 				</ul>
