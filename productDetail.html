@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>综合查询页</title>
+<title>产品详情页</title>
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="js/datatables/media/css/jquery.dataTables.min.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,7 +15,7 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/integratedQuery.css">
+<link rel="stylesheet" href="css/productDetail.css">
 <link rel="stylesheet" href="css/responsive.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -118,7 +117,7 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">首页</a></li>
-					<li class="active">
+					<li>
 						<a href="integratedQuery.html">买车</a>
 					</li>
 					<li><a href="javascript:;">卖车</a></li>
@@ -137,113 +136,16 @@
 		<div class="row row-position">
 			您当前的位置：
 			<a href="index.html">首页</a> > <a href="integratedQuery.html">买车</a>
+			> 奥迪a7
 		</div>
 	</div>        
 </div> <!-- End slider area -->
-
-<div class="promo-area query-promo-area">
-	<div class="container">
-		<div class="row row-choose">
-			<div class="col-md-12 col-sm-12 hasChoosed clearfix">
-				<span class="floatleft">您已选择：</span>
-				<p class="floatleft"></p>
-				<i class="iconfont" title="一键清空" onclick="remAllConditions(this);">&#xe66b;</i>
-			</div>
-			<div class="col-md-12 col-sm-12">
-				<ul class="query-conditions">
-					<li class="clearfix">
-						<span class="floatleft">品 牌：</span>
-						<div class="floatleft condition-list">
-							<a href="javascript:;" name="brand" class="selected">全部</a>
-							<a href="javascript:;" name="brand">奥迪</a>
-							<a href="javascript:;" name="brand">本田</a>
-							<a href="javascript:;" name="brand">别克</a>
-							<a href="javascript:;" name="brand">宝马</a>
-							<a href="javascript:;" name="brand">北汽制造</a>
-							<a href="javascript:;" name="brand">福特</a>
-							<a href="javascript:;" name="brand">马自达</a>
-							<a href="javascript:;" name="brand">MG</a>
-							<a href="javascript:;" name="brand">欧朗</a>
-						</div>
-					</li>
-					<li class="clearfix">
-						<span class="floatleft">车 型：</span>
-						<div class="floatleft condition-list">
-							<a href="javascript:;" name="carType" class="selected">全部</a>
-							<a href="javascript:;" name="carType">跑车</a>
-							<a href="javascript:;" name="carType">轿车</a>
-							<a href="javascript:;" name="carType">越野车/SUV</a>
-							<a href="javascript:;" name="carType">MPV</a>
-							<a href="javascript:;" name="carType">面包车</a>
-							<a href="javascript:;" name="carType">皮卡</a>
-							<a href="javascript:;" name="carType">货车</a>
-							<a href="javascript:;" name="carType">商务车/MPV</a>
-							<a href="javascript:;" name="carType">客车</a>
-						</div>
-					</li>
-					<li class="clearfix">
-						<span class="floatleft">价 格：</span>
-						<div class="floatleft condition-list">
-							<a href="javascript:;" name="price" class="selected">全部</a>
-							<a href="javascript:;" name="price">3万以下</a>
-							<a href="javascript:;" name="price">3-5万</a>
-							<a href="javascript:;" name="price">5-8万</a>
-							<a href="javascript:;" name="price">8-12万</a>
-							<a href="javascript:;" name="price">12-18万</a>
-							<a href="javascript:;" name="price">18-24万</a>
-							<a href="javascript:;" name="price">24-35万</a>
-							<a href="javascript:;" name="price">35-50万</a>
-							<a href="javascript:;" name="price">50-100万</a>
-							<a href="javascript:;" name="price">100万以上</a>
-						</div>
-					</li>
-					<li class="clearfix">
-						<span class="floatleft">车 龄：</span>
-						<div class="floatleft condition-list">
-							<a href="javascript:;" name="carAge" class="selected">全部</a>
-							<a href="javascript:;" name="carAge">1年以内</a>
-							<a href="javascript:;" name="carAge">2年以内</a>
-							<a href="javascript:;" name="carAge">3年以内</a>
-							<a href="javascript:;" name="carAge">4年以内</a>
-							<a href="javascript:;" name="carAge">5年以内</a>
-							<a href="javascript:;" name="carAge">6年以内</a>
-							<a href="javascript:;" name="carAge">6年以上</a>
-						</div>
-					</li>
-					<li class="clearfix">
-						<span class="floatleft">排 量：</span>
-						<div class="floatleft condition-list">
-							<a href="javascript:;" name="transmission" class="selected">全部</a>
-							<a href="javascript:;" name="transmission">1.0L</a>
-							<a href="javascript:;" name="transmission">2.0L</a>
-							<a href="javascript:;" name="transmission">3.0L</a>
-							<a href="javascript:;" name="transmission">4.0L</a>
-							<a href="javascript:;" name="transmission">5.0L及以上</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div> <!-- End promo area -->
 
 
 <div class="product-widget-area">
 	<div class="zigzag-bottom"></div>
 	<div class="container">
-		<table id="productTable" class="product-table">  
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>					
-					<th></th>
-					<th>时间</th>
-					<th>价格</th>
-					<th>里程</th>
-					<th>车龄</th>
-				</tr>
-			</thead>
-		</table>
+		产品详情写到这里
 	</div>
 </div> <!-- End product widget area -->
 
@@ -325,47 +227,6 @@
 
 <!-- Bootstrap JS form CDN -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/datatables/media/js/jquery.dataTables.min.js"></script>	
-<script>
-	$.extend( $.fn.dataTable.defaults, {
-		"searching": false,
-	    "info": false,
-	    "lengthChange": false,
-    	"bAutoWidth": true,
-    	"bPaginate": true, //翻页功能
-		"bLengthChange": false, //改变每页显示数据数量
-		"bFilter": false, //过滤功能
-		"pageLength": 5,
-		// "ordering": true, //排序功能
-		"bInfo": false,//页脚信息
-		"serverSide": true,
-		"pagingType":   "full_numbers",
-		"oLanguage":{   //设置中文文本 
-		    "sProcessing":   "处理中...",
-		    "sLengthMenu":   "显示 _MENU_ 项结果",
-		    "sZeroRecords":  "没有匹配结果",
-		    "sInfo":         "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
-		    "sInfoEmpty":    "显示第 0 至 0 项结果，共 0 项",
-		    "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
-		    "sInfoPostFix":  "",
-		    "sSearch":       "搜索:",
-		    "sUrl":          "",
-		    "sEmptyTable":     "表中数据为空",
-		    "sLoadingRecords": "载入中...",
-		    "sInfoThousands":  ",",
-		    "oPaginate": {
-		        "sFirst":    "首 页",
-		        "sPrevious": "上一页",
-		        "sNext":     "下一页",
-		        "sLast":     "末 页"
-		    },
-		    "oAria": {
-		        "sSortAscending":  ": 以升序排列此列",
-		        "sSortDescending": ": 以降序排列此列"
-		    }
-		}
-	});
-</script>
 
 <!-- jQuery sticky menu -->
 <script src="js/owl.carousel.min.js"></script>
@@ -375,6 +236,6 @@
 <script src="js/jquery.easing.1.3.min.js"></script>
 
 <!-- Main Script -->
-<script src="js/integratedQuery.js"></script>
+<script src="js/productDetail.js"></script>
 </body>
 </html>

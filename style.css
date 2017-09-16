@@ -605,6 +605,9 @@ padding: 35px 0 180px;}
   font-weight: 100;color: #fff
 }
 
+.footer-menu {
+  padding-top: 30px;
+}
 .footer-menu ul {
     margin: 0;
     padding: 0;
@@ -1148,4 +1151,9 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 .pagination > li > a, .pagination > li > span {
   color: #1abc9c;
+}
+
+/* 当前菜单位置 */
+.row-position {
+  padding: 15px;
 }
