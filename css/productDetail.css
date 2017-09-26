@@ -2,10 +2,139 @@
 * @Author: Administrator
 * @Date:   2017-09-11 22:09:20
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-16 23:21:29
+* @Last Modified time: 2017-09-26 22:34:58
 */
 /* 产品列表 */
 .product-widget-area {
 	background-color: #f0f0f0;
 	padding-bottom: 120px;
+}
+.detail-content > .row {
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.detail-img-wrap {
+	padding: 20px 30px 10px 20px;
+}
+.detail-img {
+	padding: 10px;
+	margin: 0 10px 10px 0;
+	border: 1px solid #e0e0e0;
+}
+.detail-img > img {
+	width: 100%;
+}
+.small-imgs {
+	padding-left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.small-imgs > li {
+	width: 25%;
+	padding-right: 10px;
+	cursor: pointer;
+}
+.small-imgs > li > img {
+	width: 100%;
+}
+
+/* 右边产品信息 */
+.detail-info {
+	padding: 25px 30px 20px 20px;
+}
+.detail-info > h3 {
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.detail-info > h3 > p {
+	color: #f60;
+	font-size: 14px;
+}
+.price-phone {
+	height: 60px;
+	padding-left: 20px;
+	line-height: 60px;
+	background-color: #f0f0f0;
+	border: 1px solid #e0e0e0;
+	margin-top: 15px;
+}
+.detail-price {
+	color: #f60;
+	font-size: 16px;
+}
+.price-phone > button {
+	border: none;
+  	color: #fff;
+  	background-color: #fc7f01;
+  	height: 34px;
+  	line-height: 34px;
+  	margin: 12px 0 0 30px;
+  	outline: none;
+}
+.config-info {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	margin-top: 20px;
+}
+.config-info > li {
+	height: 30px;
+}
+.date-num > span {
+	color: #838383;
+}
+.config-info > li > label {
+	display: inline-block;
+	width: 70px;
+	color: #838383;
+}
+
+/* 产品详情和大图展示 */
+.product-details > h4 {
+	border-bottom: 1px solid #e0e0e0;
+}
+.product-details > h4 > span {
+	display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+	padding: 0 10px; 
+	color: #fc7f01;
+	position: relative;
+}
+.product-details > h4 > span:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fc7f01;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+.product-detail-content {
+	padding: 0 20px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.detail-title {
+	color: #666;
+	margin-bottom: 20px;
+}
+.detail-param > h5 {
+	color: #838383; 
+}
+.detail-param-list {
+	padding-left: 0;
+}
+.detail-param-list > li {
+	float: left;
+	width: 33.3%;
+	height: 30px;
+	color: #838383;
+}
+.large-imgs {
+	padding: 20px;
+}
+.large-imgs > img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 }

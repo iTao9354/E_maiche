@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-09-11 23:08:50
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-16 23:23:17
+* @Last Modified time: 2017-09-26 22:54:18
 */
 
 $(function() {
@@ -55,94 +55,94 @@ function remAllConditions(ele) {
 // 初始化表格
 var productTableData = [
     {
-    	productId: "adhiheeiw22", 
-    	productImg: "product-thumb-1", 
-    	productDesc: null,
-    	productTitle: "1111奥迪A6L2014款 30 FSI", 
+    	carInfoID: "adhiheeiw22", 
+    	frontImgURL: "product-thumb-1", 
+    	czms: null,
+    	carName: "1111奥迪A6L2014款 30 FSI", 
     	price: 28.50, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月2日",
-    	color: "黑",
-    	distance: 3.50,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月2日",
+    	ys: "黑",
+    	xslc: 3.50,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     },
     { 
-    	productId: "desfefcds3",
-    	productImg: "product-thumb-2", 
-    	productDesc: null,
-    	productTitle: "2222奥迪A6L2014款 30 FSI", 
+    	carInfoID: "desfefcds3",
+    	frontImgURL: "product-thumb-2", 
+    	czms: null,
+    	carName: "2222奥迪A6L2014款 30 FSI", 
     	price: 28.52, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月1日",
-    	color: "黑",
-    	distance: 4.8,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月1日",
+    	ys: "黑",
+    	xslc: 4.8,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     },
     { 
-    	productId: "t4frfdds3",
-    	productImg: "product-thumb-1", 
-    	productDesc: null,
-    	productTitle: "1111奥迪A6L2014款 30 FSI", 
+    	carInfoID: "t4frfdds3",
+    	frontImgURL: "product-thumb-1", 
+    	czms: null,
+    	carName: "1111奥迪A6L2014款 30 FSI", 
     	price: 28.50, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月2日",
-    	color: "黑",
-    	distance: 3.50,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月2日",
+    	ys: "黑",
+    	xslc: 3.50,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     },
     { 
-    	productId: "fef3f3",
-    	productImg: "product-thumb-2", 
-    	productDesc: null,
-    	productTitle: "2222奥迪A6L2014款 30 FSI", 
+    	carInfoID: "fef3f3",
+    	frontImgURL: "product-thumb-2", 
+    	czms: null,
+    	carName: "2222奥迪A6L2014款 30 FSI", 
     	price: 28.52, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月1日",
-    	color: "黑",
-    	distance: 4.8,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月1日",
+    	ys: "黑",
+    	xslc: 4.8,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     },
     { 
-    	productId: "defdsfw3dds3",
-    	productImg: "product-thumb-1", 
-    	productDesc: null,
-    	productTitle: "1111奥迪A6L2014款 30 FSI", 
+    	carInfoID: "defdsfw3dds3",
+    	frontImgURL: "product-thumb-1", 
+    	czms: null,
+    	carName: "1111奥迪A6L2014款 30 FSI", 
     	price: 28.50, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月2日",
-    	color: "黑",
-    	distance: 3.50,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月2日",
+    	ys: "黑",
+    	xslc: 3.50,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     },
     { 
-    	productId: "dddddr3fds3",
-    	productImg: "product-thumb-2", 
-    	productDesc: null,
-    	productTitle: "2222奥迪A6L2014款 30 FSI", 
+    	carInfoID: "dddddr3fds3",
+    	frontImgURL: "product-thumb-2", 
+    	czms: null,
+    	carName: "2222奥迪A6L2014款 30 FSI", 
     	price: 28.52, 
-    	displacement: 2.5,
-    	registeredDate: "2014年5月1日",
-    	color: "黑",
-    	distance: 4.8,
+    	outputVolume: 2.5,
+    	sprq: "2014年5月1日",
+    	ys: "黑",
+    	xslc: 4.8,
     	desc: "一手私家车 无事故 可按揭",
-    	issuedDate: "2017-07-27"
+    	fbrq: "2017-07-27"
     }        
  ];
 function initProductTable(){
 	$("#productTable").width("100%").dataTable({
 		"columns":[
-		            { "data": "productImg", width: "144px" },
-		            { "data": "productDesc" },
+		            { "data": "frontImgURL", width: "144px" },
+		            { "data": "czms" },
 		            { "data": "price", width: "80px" },
-		            { "data": "registeredDate" },
+		            { "data": "sprq" },
 		            { "data": "price" },
-		            { "data": "distance" },
-		            { "data": "registeredDate" }
+		            { "data": "xslc" },
+		            { "data": "sprq" }
 		 ],
 //		 "json":{
 //			 "total":10,
@@ -165,7 +165,7 @@ function initProductTable(){
 				"orderable": false,
 				"render" : function(data, type,row) {
 					  var html = '';
-					  html += '<a href="productDetail.html#'+row.productId+'"><img src="img/'+data+'.jpg"></a>';
+					  html += '<a href="productDetail.html#'+row.carInfoID+'"><img src="img/'+data+'.jpg"></a>';
 				      return html;
 				   }
 			},
@@ -175,15 +175,15 @@ function initProductTable(){
 				"orderable": false,
 				"render" : function(data, type,row) {
 					  var html = '';
-					  html += '<a href="productDetail.html#'+row.productId+'">'+row.productTitle+'</a>';
+					  html += '<a href="productDetail.html#'+row.carInfoID+'">'+row.carName+'</a>';
 					  html += '<p>';
-					  html += '排量：<span>'+row.displacement+'</span>';
-					  html += '上牌日期：<span>'+row.registeredDate+'</span>';
-					  html += '颜色：<span>'+row.color+'</span>';
-					  html += '行驶里程：<span>'+row.distance+'万公里</span>';
+					  html += '排量：<span>'+row.outputVolume+'</span>';
+					  html += '上牌日期：<span>'+row.sprq+'</span>';
+					  html += '颜色：<span>'+row.ys+'</span>';
+					  html += '行驶里程：<span>'+row.xslc+'万公里</span>';
 					  html += '</p>'
 					  html += '<p>车主说明：<span>'+row.desc+'</span></p>';
-					  html += '<p>发布时间：<span>'+row.issuedDate+'</span></p>';
+					  html += '<p>发布时间：<span>'+row.fbrq+'</span></p>';
 				      return html;
 				   }
 			},
