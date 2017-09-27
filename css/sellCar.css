@@ -1,0 +1,119 @@
+/* 产品列表 */
+.product-widget-area {
+	background-color: #f0f0f0;
+	padding-bottom: 120px;
+}
+.sellCar-content {
+	padding: 20px 30px;
+	background-color: #fff;
+}
+.sellCar-content > .row {
+	margin-bottom: 10px;
+}
+.row-title {
+	padding: 0 10px;
+	min-height: 50px;		
+}
+.row-title > h4 {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+.row-title > h4 > span {
+	position: relative;
+	display: inline-block;
+	padding: 0 10px;
+}
+.row-title > h4 > span:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: #fc7f01;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.row-left {
+	text-align: right;
+	padding-right: 0;
+}
+.row-right {
+	text-align: left;
+	padding-left: 3px;
+}
+.select-box,
+.row-right .cm-input {
+	width: 110px;
+	height: 26px;
+	border-color: #ccc;
+}
+.select-box-sm {
+	width: 207px;
+}
+.select-box-md {
+	width: 227px;
+}
+.row-right .Wdate {
+	border-color: #ccc;
+}
+.row-right .cm-input-sm {
+	width: 165px;
+}
+.row-right .cm-input-md {
+	width: 180px;
+}
+.row-right .cm-input-lg {
+	width: 227px;
+}
+.sellCar-content .row-area {
+	margin-bottom: 5px;
+}
+.area-md {
+	width: 227px;
+	height: 100px;
+	border-color: #ccc;
+}
+.row-right > button {
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px;
+	color: #fff;
+	border: none;
+	background: #fc7f01;
+}
+
+/* 上传文件 */
+.sellCar-content .row-upload {
+	margin-bottom: 0;
+}
+.picker {
+	margin-right: 10px;
+    height: 30px;
+    display: inline-block;
+}
+.webuploader-container .webuploader-pick {
+	background-color: #fc7f01;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 15px;
+    height: 30px;
+    line-height: 14px;
+}
+.webuploader-container .webuploader-pick-hover {
+    background-color: #fb9937;
+}
+.webuploader-pick .iconfont {
+	margin-right: 3px;
+}
+.upload-btn {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	background: #fc7f01;
+	position: relative;
+	top: -10px;
+}

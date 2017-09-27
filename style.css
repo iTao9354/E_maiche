@@ -36,6 +36,10 @@ h6 {
     font-weight: 700;
     margin: 0 0 15px;
 }
+input, button, select, textarea {
+  border: 1px solid #ccc;
+  outline: none;
+}
 body { font-family: 'Titillium Web', sans-serif; }
 li {
   list-style: none;
@@ -1120,4 +1124,12 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 /* 当前菜单位置 */
 .row-position {
   padding: 15px;
+}
+
+/* 必填星号 */
+.cSign {
+  color: red;
+}
+label {
+  font-weight: normal;
 }
