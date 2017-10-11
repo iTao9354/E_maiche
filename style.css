@@ -318,7 +318,7 @@ z-index: 9;
 }
 .single-promo i {
   font-size: 28px;
-  margin-right: -6px;
+  margin-right: -3px;
 }
 .single-promo > .carType {
   margin-right: -2px;
@@ -403,8 +403,9 @@ z-index: 9;
 .product-hover a.add-to-cart-link {top: -25%;}
 .product-hover a.view-details-link { bottom: -25%;}
 .single-product h2 {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
     margin-bottom: 10px;
     margin-top: 15px;
 }
@@ -523,8 +524,10 @@ z-index: 9;
     width: 100px;
 }
 .single-wid-product h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 12px;
+    font-weight: normal;
+    line-height: 24px;
 }
 .product-wid-rating {
     color: #ffc808;

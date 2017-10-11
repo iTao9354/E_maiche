@@ -5,10 +5,26 @@
 }
 .sellCar-content {
 	padding: 20px 30px;
+	margin-bottom: 10px;
 	background-color: #fff;
 }
 .sellCar-content > .row {
 	margin-bottom: 10px;
+}
+.profile {
+	text-indent: 2em;
+	line-height: 24px;
+}
+.contact-info > div {
+	padding-left: 40px;
+	line-height: 30px;
+}
+.contact-info .iconfont {
+	color: #fc7f01;
+	margin-left: 5px;
+	position: relative;
+	top: -2px;
+	cursor: pointer;
 }
 .row-title {
 	padding: 0 10px;
